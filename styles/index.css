@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: darkorchid;
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@ body {
 
 @keyframes title {
     0%  {transform: scale(1);}
-    50% {transform: scale(1.2);}
+    50% {transform: scale(1.1);}
     100% {transform: scale(1);}
 }
 
@@ -36,6 +36,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
+    box-shadow: 20px 30px 70px 10px rgba(0, 0, 0, 5);
 }
 
 img {
@@ -71,18 +72,19 @@ button{
     background-color: black;
     border: none;
     border-radius: 50px;
-    transition: color 1s ease-in-out;
-    transition: background-color 1s ease-in-out;
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .trick:hover{
     color: darkred;
     background-color: white;
+    transform: scale(1.2);
 }
 
 .treat:hover{
     color: blueviolet;
     background-color: white;
+    transform: scale(1.2);
 }
 
 .buttons{
